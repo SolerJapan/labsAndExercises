@@ -37,7 +37,7 @@ render(){
 class DivOne extends React.Component {
       render() {
         return (
-          <div id="divOne">
+          <div id="divone">
           <DivTwo Prop1 = {this.props.Prop1} Prop2={this.props.Prop2}/>
           </div>
         )
