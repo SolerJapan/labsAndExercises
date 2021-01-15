@@ -31,8 +31,9 @@ render(){
     </div>
   )
 }
-}//end of class App
+}
 
+// renders the first div inside of the main app which will hold the other 2
 class DivOne extends React.Component {
       render() {
         return (
@@ -46,7 +47,7 @@ class DivOne extends React.Component {
 class DivTwo extends React.Component {
 
     render() {
-      //according to rendering div3 inside of div2
+      // rendering div3 inside of div2 twice
         return (
           <div id="divtwo">
           <DivThree Prop1 = {this.props.Prop1} Prop2={this.props.Prop2}/>
@@ -60,7 +61,7 @@ class DivTwo extends React.Component {
 
 class DivThree extends React.Component {
 
-    render() {
+    render() {// inside box
       console.log("inside DivThree");
       console.log(this.props.Prop1);
         return (
