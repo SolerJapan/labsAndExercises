@@ -62,8 +62,6 @@ class DivTwo extends React.Component {
 class DivThree extends React.Component {
 
     render() {// inside box
-      console.log("inside DivThree");
-      console.log(this.props.Prop1);
         return (
           <div id="divthree">
               <h3 onClick={() => this.props.Prop2(this.props.Prop1)}> {this.props.Prop1}</h3>
