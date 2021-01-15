@@ -37,7 +37,7 @@ render(){
 class DivOne extends React.Component {
       render() {
         return (
-          <div id="divone">
+          <div id="divOne">
           <DivTwo Prop1 = {this.props.Prop1} Prop2={this.props.Prop2}/>
           </div>
         )
@@ -66,7 +66,7 @@ class DivThree extends React.Component {
       console.log(this.props.Prop1);
         return (
           <div id="divthree">
-              <h3 onClick={() => this.props.passingProp2(this.props.Prop1)}> {this.props.Prop1}</h3>
+              <h3 onClick={() => this.props.Prop2(this.props.Prop1)}> {this.props.Prop1}</h3>
           </div>
         )
     }
