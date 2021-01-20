@@ -6,7 +6,7 @@ class App extends React.Component {
       caps: false,
     }
   }//below is function to change to caps and reverse
-  changeIt = (text) => {
+  change = (text) => {
   if (this.state.tardis.caps) {
     this.setState({
       tardis: {
@@ -27,7 +27,7 @@ render(){
 
   return(
     <div id="appcomponent">
-    <DivOne Prop1 = {this.state.tardis.name} Prop2={this.changeIt}/>
+    <DivOne Prop1 = {this.state.tardis.name} Prop2={this.change}/>
     </div>
   )
 }
